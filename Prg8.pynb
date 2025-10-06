@@ -1,0 +1,13 @@
+list1 = ["john", "Ronny", "Bob", "Ben", "steve", "charles"]
+list2 = ["Leam", "George", "Harry", "Emma",]
+newlist = list1+list2
+print(newlist)
+n = int(input("Enter no."))
+longName = [name for name in newlist if len(name) >= n]
+print("List of long name")
+print(longName)
+NO_b_Name = [name for name in newlist if 'b' not in name.lower()]
+print(NO_b_Name)
+newName = (input("Enter the name to add inthe list "))
+newlist.append(newName)
+print(newlist)
